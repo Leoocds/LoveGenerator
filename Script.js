@@ -11,7 +11,7 @@ const compliments = [
     "Tipo Sol e Lua, separados pela distância e conectados pelo amor.",
     "I get so lost inside your eyes",
     {
-        text: "Abra o link"
+        text: "Abra o link",
         link: "https://spotify.link/cmb5ssSyECb"
     }
 ];
