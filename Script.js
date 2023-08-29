@@ -12,11 +12,11 @@ const compliments = [
     "I get so lost inside your eyes",
     {
         image: "./CódigoSpotify1.png"
-        link: 
+        link: "https://spotify.link/gq045nkxECb"
     },
     {
         image: "./CódigoSpotify2.png"
-        link: 
+        link: "https://spotify.link/9G6B96mxECb"
     }
 ];
 
