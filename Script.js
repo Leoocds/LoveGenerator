@@ -13,6 +13,7 @@ const compliments = [
     {
         text: "Abra o link"
         link: "https://spotify.link/cmb5ssSyECb"
+    }
 ];
 
 const complimentElement = document.getElementById("compliment");
