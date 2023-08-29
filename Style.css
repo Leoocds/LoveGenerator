@@ -9,7 +9,7 @@
 }
 
 body {
-    background: content-box radial-gradient(crimson, skyblue);
+    background: content-box radial-gradient(#b80101, #0f0000);
     margin: 0;
     display: flex;
     justify-content: center;
