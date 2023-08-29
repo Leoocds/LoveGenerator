@@ -10,7 +10,7 @@ const compliments = [
     "Você é a resposta para todas perguntas de amor e felicidade.",
     "Tipo Sol e Lua, separados pela distância e conectados pelo amor.",
     "I get so lost inside your eyes",
-    "https://spotify.link/eLJewEayECb"
+    "https://spotify.link/eLJewEayECb",
     {
         image: "./CódigoSpotify1.png"
     }
