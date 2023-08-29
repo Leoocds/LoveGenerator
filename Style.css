@@ -77,5 +77,6 @@ p {
     #complimentImage {
 	    width: 200px;
 	    height: auto;
+	    text-align: center;
     }
 }
