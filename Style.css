@@ -79,4 +79,8 @@ p {
 	    height: auto;
 	    text-align: center;
     }
+
+    .container {
+	    text-align: center;
+    }
 }
