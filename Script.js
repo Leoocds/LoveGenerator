@@ -12,9 +12,11 @@ const compliments = [
     "I get so lost inside your eyes",
     {
         image: "./CódigoSpotify1.png"
+        link: 
     },
     {
         image: "./CódigoSpotify2.png"
+        link: 
     }
 ];
 
@@ -29,6 +31,13 @@ generateButton.addEventListener("click", () => {
         complimentElement.textContent = "";
         complimentImageElement.src = randomCompliment.image;
         complimentImageElement.style.display = "block"; 
+
+        const imageAnchor = document.createElement("a");
+        imageAnchor.href = randomCompliment.link;
+        imageAnchor.target = "_blank"; 
+        imageAnchor.appendChild(complimentImageElement);
+        complimentImageElement.parentNode.replaceChild(imageAnchor, complimentImageElement);
+        
     } else {
         complimentElement.textContent = randomCompliment;
         complimentImageElement.style.display = "none"; 
