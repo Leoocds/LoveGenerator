@@ -25,17 +25,12 @@ const generateButton = document.getElementById("generateButton");
 generateButton.addEventListener("click", () => {
     const randomCompliment = compliments[Math.floor(Math.random() * compliments.length)];
 
-    if (typeof randomCompliment === "object" && randomCompliment.image) {
-        const imageAnchor = document.createElement("a");
-        imageAnchor.href = randomCompliment.link || "https://spotify.link/3HH9JEDwECb", "https://spotify.link/9NOgGkVwECb";
-        const imageElement = document.createElement("img");
-        imageElement.src = randomCompliment.image;
-        imageElement.alt = "Imagem de elogio";
-
-        imageAnchor.appendChild(imageElement);
-        imagesContainer.innerHTML = ""; 
-        imagesContainer.appendChild(imageAnchor);
+    if (typeof randomCompliment === "object") {
+        complimentElement.textContent = "";
+        complimentImageElement.src = randomCompliment.image;
+        complimentImageElement.style.display = "block"; 
     } else {
-        imagesContainer.innerHTML = "";
+        complimentElement.textContent = randomCompliment;
+        complimentImageElement.style.display = "none"; 
     }
 });
