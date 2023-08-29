@@ -73,6 +73,10 @@ p {
     text-decoration: none;
 }
 
+#music {
+    color: blue;
+}
+
 @media screen and (max-width: 782px) {
     #complimentImage {
 	    width: 200px;
