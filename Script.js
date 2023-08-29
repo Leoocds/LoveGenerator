@@ -33,4 +33,6 @@ generateButton.addEventListener("click", () => {
         complimentElement.textContent = randomCompliment;
         complimentImageElement.style.display = "none"; 
     }
+
+    https://spotify.link/3HH9JEDwECb
 });
