@@ -27,7 +27,8 @@ generateButton.addEventListener("click", () => {
     } else {
         complimentElement.textContent = randomCompliment;
     }
-    
+});
+
 function openLink(link) {
 window.open(link, "_blank");
-});
+}
