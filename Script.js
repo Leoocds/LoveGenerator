@@ -16,7 +16,6 @@ const compliments = [
 ];
 
 const complimentElement = document.getElementById("compliment");
-const complimentImageElement = document.getElementById("complimentImage");
 const generateButton = document.getElementById("generateButton");
 
 generateButton.addEventListener("click", () => {
