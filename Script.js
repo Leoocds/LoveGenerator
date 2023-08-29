@@ -10,10 +10,9 @@ const compliments = [
     "Você é a resposta para todas perguntas de amor e felicidade.",
     "Tipo Sol e Lua, separados pela distância e conectados pelo amor.",
     "I get so lost inside your eyes",
-    "https://spotify.link/eLJewEayECb",
     {
-        image: "./CódigoSpotify1.png"
-    }
+        text: "Abra o link"
+        link: "https://spotify.link/cmb5ssSyECb"
 ];
 
 const complimentElement = document.getElementById("compliment");
@@ -24,12 +23,11 @@ generateButton.addEventListener("click", () => {
     const randomCompliment = compliments[Math.floor(Math.random() * compliments.length)];
 
     if (typeof randomCompliment === "object") {
-        complimentElement.textContent = "";
-        complimentImageElement.src = randomCompliment.image;
-        complimentImageElement.style.display = "block"; 
-
+        complimentElement.innerHTML = `<p onclick="openLink('${randomCompliment.link}')">${randomCompliment.text}</p>`;
     } else {
         complimentElement.textContent = randomCompliment;
-        complimentImageElement.style.display = "none"; 
     }
+    
+function openLink(link) {
+window.open(link, "_blank");
 });
