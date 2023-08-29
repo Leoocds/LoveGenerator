@@ -12,11 +12,9 @@ const compliments = [
     "I get so lost inside your eyes",
     {
         image: "./CódigoSpotify1.png"
-        link: "https://spotify.link/gq045nkxECb"
     },
     {
         image: "./CódigoSpotify2.png"
-        link: "https://spotify.link/9G6B96mxECb"
     }
 ];
 
@@ -32,11 +30,6 @@ generateButton.addEventListener("click", () => {
         complimentImageElement.src = randomCompliment.image;
         complimentImageElement.style.display = "block"; 
 
-    const imageAnchor = document.createElement("a");
-        imageAnchor.href = randomCompliment.link;
-        imageAnchor.target = "_blank"; // Abre o link em uma nova aba
-        imageAnchor.appendChild(complimentImageElement);
-        complimentImageElement.parentNode.replaceChild(imageAnchor, complimentImageElement);
     } else {
         complimentElement.textContent = randomCompliment;
         complimentImageElement.style.display = "none"; 
