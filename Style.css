@@ -74,8 +74,8 @@ p {
 }
 
 @media screen and (max-width: 782px) {
-    img {
+    #complimentImage {
 	    width: 100px;
-	    height: 100px;
+	    height: auto;
     }
 }
