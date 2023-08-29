@@ -23,7 +23,7 @@ generateButton.addEventListener("click", () => {
     const randomCompliment = compliments[Math.floor(Math.random() * compliments.length)];
 
     if (typeof randomCompliment === "object") {
-        complimentElement.innerHTML = `<p onclick="openLink('${randomCompliment.link}')">${randomCompliment.text}</p>`;
+        complimentElement.innerHTML = `<p id="music" onclick="openLink('${randomCompliment.link}')">${randomCompliment.text}</p>`;
     } else {
         complimentElement.textContent = randomCompliment;
     }
